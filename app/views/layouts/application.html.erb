@@ -10,11 +10,14 @@
 	<nav class="navbar navbar-inverse">
     <%=link_to "Nuevo_blog", root_path, class:"navbar-brand" %>
     <ul class="nav navbar-nav">
-      <li class="active">
-        <%= link_to "Inicio", root_path %>
+      <li>
+        <%= link_to "inicio", root_path %>
       </li>
       <li>
-        <%= link_to "Posts", posts_path %>
+        <%= link_to "posts", posts_path %>
+      </li>
+       <li>
+        <%= link_to "users", users_path %>
       </li>
     </ul>
   </nav>

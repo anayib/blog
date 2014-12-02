@@ -11,16 +11,16 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141201211832) do
+ActiveRecord::Schema.define(version: 20141201220323) do
 
   create_table "posts", force: true do |t|
     t.string   "titulo"
-    t.string   "autor"
     t.datetime "fecha_publicacion"
     t.boolean  "estado_de_publicacion"
     t.text     "contenido"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "user_id"
   end
 
   create_table "users", force: true do |t|

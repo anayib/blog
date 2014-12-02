@@ -1,6 +1,6 @@
 <h1>Listing posts</h1>
 
-<table>
+<table class="table table-condensed">
   <thead>
     <tr>
       <th>Titulo</th>
@@ -16,7 +16,7 @@
     <% @posts.each do |post| %>
       <tr>
         <td><%= post.titulo %></td>
-        <td><%= post.autor %></td>
+        <td><%= post.user.apellido %></td>
         <td><%= post.fecha_publicacion %></td>
         <td><%= post.estado_de_publicacion %></td>
         <td><%= post.contenido %></td>
@@ -30,5 +30,5 @@
 
 <br>
 
-<%= link_to 'Nuevo Post', new_post_path %>
-<%= link_to 'Regresar al Home', root_path %>
+<%= link_to 'Nuevo Post', new_post_path, class: "btn btn-success" %>
+<%= link_to 'Regresar al Home', root_path, class: "btn btn-default"   %>
